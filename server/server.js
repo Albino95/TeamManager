@@ -8,4 +8,6 @@ app.use(express.urlencoded({extended: true}));
 
 require('./config/mongoose.config')
 
+require('./routes/team.routes') (app)
+
 app.listen(8000, ()=> {console.log("you are connected to port 8000")});
