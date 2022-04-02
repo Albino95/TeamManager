@@ -19,7 +19,6 @@ const TeamSchema = new mongoose.Schema({
             "Attacking Midfielder",
             "Striker",
     ],
-        required: [true, "please select a preferred position"]
             
     }
 }, {timestamps:true})
