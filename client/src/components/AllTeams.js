@@ -7,6 +7,7 @@ import Header from './Header'
 
 
 
+
 const AllTeams = () => {
 
     const [players, setPlayers] = useState([])
@@ -42,10 +43,16 @@ const AllTeams = () => {
     return (
         <div>
             <Header />
-            <div>
-                <Link to = "/">List All Players</Link>
+            <div className={styles.mainbar}>
+                <Link className= {styles.mainbarelement} to = "/">List All Players</Link>
                 <Link to = '/new'>Add new player</Link>
             </div>
+            <div className={styles.commandbox}>
+                <div className={styles.commandrow}>
+                    <p>Team Name</p>
+                    <p>Preferred Posiotion</p>
+                    <p>Actions</p>
+                </div>
                 {
                     players.map((player, index) => (
                         <div key={index} className={styles.list}>
@@ -55,6 +62,7 @@ const AllTeams = () => {
                         </div>
                     ))
                 }
+            </div>
             
         </div>
     )

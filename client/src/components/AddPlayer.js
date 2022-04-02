@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
-
+import styles from "./style.module.css"
 
 
 const AddPlayer = (props) => {
@@ -34,7 +34,7 @@ const AddPlayer = (props) => {
         <div>
             <Header />
 
-            <form onSubmit={handleSubmit} >
+            <form onSubmit={handleSubmit} className={styles.form}>
                 <div>
                     <label>Insert player name:</label>
                     <input type='text' value = {playerName} onChange = {(e) => setPlayerName(e.target.value)} />
@@ -56,7 +56,7 @@ const AddPlayer = (props) => {
                     </select>
                 </div>
 
-                <button>Add Player</button>
+                <button type='submit' className={styles.add}>Add Player</button>
 
             </form>
         </div>

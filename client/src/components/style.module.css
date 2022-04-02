@@ -14,3 +14,57 @@
     height: 30px;
     align-self: center;
 }
+
+.add {
+    background-color: green;
+    color: white;
+    width: 200px;
+    height: 30px;
+
+}
+
+.header {
+    display: flex;
+    padding: 20px;
+    width: 30%;
+    justify-content: space-evenly;
+}
+    .headerelement {
+        border-right: 2px solid black;
+        padding-right: 10px;
+    }
+
+.mainbar {
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+    
+}
+    .mainbarelement{
+        padding-right: 10px;
+        border-right: 2px solid black;
+    }
+
+.commandbox {
+    border: 2px solid lightslategray;
+    margin: 20px;
+    height: 1000px;
+}
+
+.commandrow {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgray;
+    border-bottom: 2px solid darkslategray ;
+}
+.form {
+    margin-top: 100px;
+    margin-left: 150px;
+    border: 2px solid lightslategray;
+    width: 700px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 40px;
+}
