@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 import styles from './style.module.css'
 
 const Header = (props) => {
+    const {pageObjective} = props;
     return (
         <header className={styles.header}>
-            <Link className={styles.headerelement} to = {'/'}>Manage players</Link>
-            <Link to = "/status">Manage Player Status</Link>
+            <h1>Pet Shelter</h1>
+            <h3>{pageObjective}</h3>
+
         </header> 
     )
 }

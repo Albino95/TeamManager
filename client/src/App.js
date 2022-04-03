@@ -1,6 +1,8 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import AddPlayer from './components/AddPlayer';
-import AllTeams from './components/AllTeams';
+import AddPet from './components/AddPet';
+import AllPets from "./components/AllPets"
+import EditPet from './components/EditPet';
+import OnePet from './components/OnePet'
 
 
 function App() {
@@ -8,8 +10,10 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Routes>
-        <Route  exact path = "/" default element={<AllTeams />} />
-        <Route  exact path = "/new" element = {<AddPlayer/>} />
+        <Route  exact path = "/" default element={<AllPets />} />
+        <Route  exact path = "/pets/new" element = {<AddPet />} />
+        <Route  exact path = "/pets/edit/:id/" element = {<EditPet />} />
+        <Route  exact path = "/pets/:id/" element = {<OnePet />} />
       </Routes>
     </div>
     </BrowserRouter>

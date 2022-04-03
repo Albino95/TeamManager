@@ -10,8 +10,8 @@ app.use(cors({
 }))
 
 
-require('./config/mongoose.config')
+require('./config/mongoose.config');
 
-require('./routes/team.routes') (app)
+require('./routes/pet.routes') (app);
 
 app.listen(8000, ()=> {console.log("you are connected to port 8000")});

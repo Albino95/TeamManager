@@ -7,7 +7,7 @@
 
 }
 
-.delete {
+.adopt {
     background-color: red;
     color: white;
     width: 100px;
@@ -15,23 +15,16 @@
     align-self: center;
 }
 
-.add {
-    background-color: green;
-    color: white;
-    width: 200px;
-    height: 30px;
-
-}
 
 .header {
     display: flex;
+    flex-direction: column;
     padding: 20px;
-    width: 30%;
+    width: 90%;
     justify-content: space-evenly;
 }
-    .headerelement {
-        border-right: 2px solid black;
-        padding-right: 10px;
+    .headerlink {
+        margin-left: 800px;
     }
 
 .mainbar {
@@ -48,7 +41,6 @@
 .commandbox {
     border: 2px solid lightslategray;
     margin: 20px;
-    height: 1000px;
 }
 
 .commandrow {
@@ -67,4 +59,16 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 40px;
+}
+
+.like {
+    background-color: green;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+.edit {
+    color: white;
+    background-color: lightblue;
 }
